@@ -1171,6 +1171,23 @@
         </div>
     </header>
 
+    <div class="container">
+        <div class="search-box">
+            <input 
+                type="text" 
+                class="search-input" 
+                id="searchInput" 
+                placeholder="සර්ච් කරන්න... (නම, වර්ගය හෝ විස්තරය)"
+                autocomplete="off"
+            >
+        </div>
+
+        <div class="results-count" id="resultsCount"></div>
+        <div class="no-results" id="noResults">🔍 කිසිදු නිෂ්පාදනයක් හමු නොවීය</div>
+
+        <div class="products-grid" id="productsGrid"></div>
+    </div>
+
     <!-- Navigation -->
     <nav>
         <div class="container nav-container">
@@ -4619,6 +4636,83 @@
     );
   });
 })();
+        const products = [
+            { id: 1, name: "Samsung Galaxy S24", category: "Electronics", description: "අලුත්ම smartphone එක", price: "Rs 180,000" },
+            { id: 2, name: "Apple iPhone 15", category: "Electronics", description: "Premium phone", price: "Rs 250,000" },
+            { id: 3, name: "Sony Headphones", category: "Electronics", description: "Noise canceling headphones", price: "Rs 35,000" },
+            { id: 4, name: "Dell Laptop", category: "Computers", description: "Gaming laptop", price: "Rs 220,000" },
+            { id: 5, name: "Nike Shoes", category: "Fashion", description: "Sport shoes", price: "Rs 15,000" },
+            { id: 6, name: "Adidas T-Shirt", category: "Fashion", description: "Cotton t-shirt", price: "Rs 3,500" },
+            { id: 7, name: "Samsung TV 55\"", category: "Electronics", description: "4K Smart TV", price: "Rs 120,000" },
+            { id: 8, name: "Canon Camera", category: "Electronics", description: "DSLR camera", price: "Rs 95,000" },
+            { id: 9, name: "Kitchen Blender", category: "Home", description: "High power blender", price: "Rs 8,500" },
+            { id: 10, name: "Office Chair", category: "Furniture", description: "Ergonomic chair", price: "Rs 18,000" },
+            { id: 11, name: "Study Table", category: "Furniture", description: "Wooden desk", price: "Rs 25,000" },
+            { id: 12, name: "Water Bottle", category: "Sports", description: "Stainless steel bottle", price: "Rs 1,200" },
+            { id: 13, name: "Yoga Mat", category: "Sports", description: "Anti-slip mat", price: "Rs 2,500" },
+            { id: 14, name: "Coffee Maker", category: "Home", description: "Automatic coffee machine", price: "Rs 12,000" },
+            { id: 15, name: "Book - JavaScript", category: "Books", description: "Programming guide", price: "Rs 2,800" },
+            { id: 16, name: "Backpack", category: "Fashion", description: "Travel backpack", price: "Rs 5,500" },
+            { id: 17, name: "Mouse Wireless", category: "Computers", description: "Bluetooth mouse", price: "Rs 2,200" },
+            { id: 18, name: "Keyboard", category: "Computers", description: "Mechanical keyboard", price: "Rs 7,500" },
+            { id: 19, name: "Sunglasses", category: "Fashion", description: "UV protection", price: "Rs 3,200" },
+            { id: 20, name: "Wall Clock", category: "Home", description: "Digital clock", price: "Rs 1,800" }
+        ];
+
+        const searchInput = document.getElementById('searchInput');
+        const productsGrid = document.getElementById('productsGrid');
+        const noResults = document.getElementById('noResults');
+        const resultsCount = document.getElementById('resultsCount');
+
+        function displayProducts(filteredProducts) {
+            productsGrid.innerHTML = '';
+            
+            if (filteredProducts.length === 0) {
+                noResults.style.display = 'block';
+                resultsCount.style.display = 'none';
+                return;
+            }
+
+            noResults.style.display = 'none';
+            resultsCount.style.display = 'block';
+            resultsCount.textContent = `නිෂ්පාදන ${filteredProducts.length}ක් හමුවිය`;
+
+            filteredProducts.forEach(product => {
+                const card = document.createElement('div');
+                card.className = 'product-card';
+                card.innerHTML = `
+                    <h3>${product.name}</h3>
+                    <span class="category">${product.category}</span>
+                    <p>${product.description}</p>
+                    <div class="price">${product.price}</div>
+                `;
+                productsGrid.appendChild(card);
+            });
+        }
+
+        function searchProducts(query) {
+            const searchTerm = query.toLowerCase().trim();
+            
+            if (searchTerm === '') {
+                displayProducts(products);
+                return;
+            }
+
+            const filtered = products.filter(product => {
+                return product.name.toLowerCase().includes(searchTerm) ||
+                       product.category.toLowerCase().includes(searchTerm) ||
+                       product.description.toLowerCase().includes(searchTerm);
+            });
+
+            displayProducts(filtered);
+        }
+
+        searchInput.addEventListener('input', (e) => {
+            searchProducts(e.target.value);
+        });
+
+        // Initial display
+        displayProducts(products);
 </script>
 </body>
 </html>
