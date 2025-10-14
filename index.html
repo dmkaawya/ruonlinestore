@@ -1161,8 +1161,13 @@
         <div class="container header-container">
             <a href="#" class="logo">RU Online Stores</a>
             <div class="search-bar">
-                <input type="text" class="search-input" placeholder="Search products...">
+                <input type="text" class="search-input" id="searchInput" placeholder="Search products..." autocomplete="off">
                 <button class="search-btn"><i class="fas fa-search"></i></button>
+                <div class="results-count" id="resultsCount"></div>
+        <div class="no-results" id="noResults">🔍 කිසිදු නිෂ්පාදනයක් හමු නොවීය</div>
+        <div class="products-grid" id="productsGrid"></div>
+    </div>
+
             </div>
             <div class="cart-icon" id="cartIcon">
                 <i class="fas fa-shopping-cart"></i>
@@ -1170,24 +1175,7 @@
             </div>
         </div>
     </header>
-
-    <div class="container">
-        <div class="search-box">
-            <input 
-                type="text" 
-                class="search-input" 
-                id="searchInput" 
-                placeholder="සර්ච් කරන්න... (නම, වර්ගය හෝ විස්තරය)"
-                autocomplete="off"
-            >
-        </div>
-
-        <div class="results-count" id="resultsCount"></div>
-        <div class="no-results" id="noResults">🔍 කිසිදු නිෂ්පාදනයක් හමු නොවීය</div>
-
-        <div class="products-grid" id="productsGrid"></div>
-    </div>
-
+    
     <!-- Navigation -->
     <nav>
         <div class="container nav-container">
