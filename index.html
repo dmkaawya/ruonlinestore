@@ -1,10 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RU Online Stores</title>
+    <title>R U Online Stores</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         /* CSS Variables for easy theming */
@@ -1551,14 +1550,14 @@
     <!-- Header -->
     <header>
         <div class="container header-container">
-            <a href="#" class="logo">RU Online Stores</a>
+            <a href="#shop" class="logo">RU Online Stores</a>
             <div class="search-bar">
                 <input type="text" class="search-input" id="searchInput" placeholder="Search products...">
                 <button class="search-btn" id="searchBtn"><i class="fas fa-search"></i></button>
             </div>
-            <div class="cart-icon" id="cartIcon">
-                <i class="fas fa-shopping-cart"></i>
-                <span class="cart-count" id="cartCount">0</span>
+            <div class="cart-icon" id="cartIcon" role="button" aria-label="Shopping cart" tabindex="0">
+                <i class="fas fa-shopping-cart" aria-hidden="true"></i>
+                <span class="cart-count" id="cartCount" aria-live="polite" aria-atomic="true">0</span>
             </div>
         </div>
     </header>
@@ -1570,11 +1569,11 @@
                 <i class="fas fa-bars"></i>
             </button>
             <ul class="nav-menu" >
-                <li class="nav-item" id="navshop">
-                    <a href="#shop" class="nav-link" data-page="shop">Shop</a>
-                </li>
                 <li class="nav-item">
                     <a href="#home" class="nav-link" data-page="home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#shop" class="nav-link" data-page="shop">Shop</a>
                 </li>
                 <li class="nav-item">
                     <a href="#cart" class="nav-link" data-page="cart">Cart</a>
@@ -2079,6 +2078,8 @@
     <div class="toast" id="toast"></div>
 
     <script>
+
+        
         // Sample product data with additional fields
         const products = [
             {
@@ -2375,6 +2376,1116 @@
                     "sizes": []
                 },
                 "cod_fee_extra": 130
+            },
+            {
+                "id": "prod9",
+                "title": "Pending Product",
+                "short_description": "pending description",
+                "price": 1000,
+                "original_price": 1600,
+                "discount_percent": 5,
+                "stock": 18,
+                "delivery_fee": 350,
+                "wholesale_breaks": [
+                    {"min_qty": 3, "discount_pct": 8},
+                    {"min_qty": 6, "discount_pct": 15}
+                ],
+                "images": [
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg"
+                ],
+                "category": "electronics",
+                "soldCount": 37,
+                "reviews": [
+                    {
+                        "name": "pend***@*****.com",
+                        "rating": 5,
+                        "comment": "pending review",
+                        "date": "2025-06-15"
+                    }
+                ],
+                "variants": {
+                    "colors": [],
+                    "sizes": []
+                },
+                "cod_fee_extra": 30
+            },
+            {
+                "id": "prod10",
+                "title": "10 Pending Product",
+                "short_description": "pending description",
+                "price": 1000,
+                "original_price": 1600,
+                "discount_percent": 5,
+                "stock": 18,
+                "delivery_fee": 350,
+                "wholesale_breaks": [
+                    {"min_qty": 3, "discount_pct": 8},
+                    {"min_qty": 6, "discount_pct": 15}
+                ],
+                "images": [
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg"
+                ],
+                "category": "electronics",
+                "soldCount": 37,
+                "reviews": [
+                    {
+                        "name": "pend***@*****.com",
+                        "rating": 5,
+                        "comment": "pending review",
+                        "date": "2025-06-15"
+                    }
+                ],
+                "variants": {
+                    "colors": [],
+                    "sizes": []
+                },
+                "cod_fee_extra": 30
+            },
+            {
+                "id": "prod11",
+                "title": "Pending Product",
+                "short_description": "pending description",
+                "price": 1000,
+                "original_price": 1600,
+                "discount_percent": 5,
+                "stock": 18,
+                "delivery_fee": 350,
+                "wholesale_breaks": [
+                    {"min_qty": 3, "discount_pct": 8},
+                    {"min_qty": 6, "discount_pct": 15}
+                ],
+                "images": [
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg"
+                ],
+                "category": "electronics",
+                "soldCount": 37,
+                "reviews": [
+                    {
+                        "name": "pend***@*****.com",
+                        "rating": 5,
+                        "comment": "pending review",
+                        "date": "2025-06-15"
+                    }
+                ],
+                "variants": {
+                    "colors": [],
+                    "sizes": []
+                },
+                "cod_fee_extra": 30
+            },
+            {
+                "id": "prod12",
+                "title": "Pending Product",
+                "short_description": "pending description",
+                "price": 1000,
+                "original_price": 1600,
+                "discount_percent": 5,
+                "stock": 18,
+                "delivery_fee": 350,
+                "wholesale_breaks": [
+                    {"min_qty": 3, "discount_pct": 8},
+                    {"min_qty": 6, "discount_pct": 15}
+                ],
+                "images": [
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg"
+                ],
+                "category": "electronics",
+                "soldCount": 37,
+                "reviews": [
+                    {
+                        "name": "pend***@*****.com",
+                        "rating": 5,
+                        "comment": "pending review",
+                        "date": "2025-06-15"
+                    }
+                ],
+                "variants": {
+                    "colors": [],
+                    "sizes": []
+                },
+                "cod_fee_extra": 30
+            },
+            {
+                "id": "prod13",
+                "title": "Pending Product",
+                "short_description": "pending description",
+                "price": 1000,
+                "original_price": 1600,
+                "discount_percent": 5,
+                "stock": 18,
+                "delivery_fee": 350,
+                "wholesale_breaks": [
+                    {"min_qty": 3, "discount_pct": 8},
+                    {"min_qty": 6, "discount_pct": 15}
+                ],
+                "images": [
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg"
+                ],
+                "category": "electronics",
+                "soldCount": 37,
+                "reviews": [
+                    {
+                        "name": "pend***@*****.com",
+                        "rating": 5,
+                        "comment": "pending review",
+                        "date": "2025-06-15"
+                    }
+                ],
+                "variants": {
+                    "colors": [],
+                    "sizes": []
+                },
+                "cod_fee_extra": 30
+            },
+            {
+                "id": "prod14",
+                "title": "Pending Product",
+                "short_description": "pending description",
+                "price": 1000,
+                "original_price": 1600,
+                "discount_percent": 5,
+                "stock": 18,
+                "delivery_fee": 350,
+                "wholesale_breaks": [
+                    {"min_qty": 3, "discount_pct": 8},
+                    {"min_qty": 6, "discount_pct": 15}
+                ],
+                "images": [
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg"
+                ],
+                "category": "electronics",
+                "soldCount": 37,
+                "reviews": [
+                    {
+                        "name": "pend***@*****.com",
+                        "rating": 5,
+                        "comment": "pending review",
+                        "date": "2025-06-15"
+                    }
+                ],
+                "variants": {
+                    "colors": [],
+                    "sizes": []
+                },
+                "cod_fee_extra": 30
+            },
+            {
+                "id": "prod15",
+                "title": "Pending Product",
+                "short_description": "pending description",
+                "price": 1000,
+                "original_price": 1600,
+                "discount_percent": 5,
+                "stock": 18,
+                "delivery_fee": 350,
+                "wholesale_breaks": [
+                    {"min_qty": 3, "discount_pct": 8},
+                    {"min_qty": 6, "discount_pct": 15}
+                ],
+                "images": [
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg"
+                ],
+                "category": "electronics",
+                "soldCount": 37,
+                "reviews": [
+                    {
+                        "name": "pend***@*****.com",
+                        "rating": 5,
+                        "comment": "pending review",
+                        "date": "2025-06-15"
+                    }
+                ],
+                "variants": {
+                    "colors": [],
+                    "sizes": []
+                },
+                "cod_fee_extra": 30
+            },
+            {
+                "id": "prod16",
+                "title": "Pending Product",
+                "short_description": "pending description",
+                "price": 1000,
+                "original_price": 1600,
+                "discount_percent": 5,
+                "stock": 18,
+                "delivery_fee": 350,
+                "wholesale_breaks": [
+                    {"min_qty": 3, "discount_pct": 8},
+                    {"min_qty": 6, "discount_pct": 15}
+                ],
+                "images": [
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg"
+                ],
+                "category": "electronics",
+                "soldCount": 37,
+                "reviews": [
+                    {
+                        "name": "pend***@*****.com",
+                        "rating": 5,
+                        "comment": "pending review",
+                        "date": "2025-06-15"
+                    }
+                ],
+                "variants": {
+                    "colors": [],
+                    "sizes": []
+                },
+                "cod_fee_extra": 30
+            },
+            {
+                "id": "prod17",
+                "title": "Pending Product",
+                "short_description": "pending description",
+                "price": 1000,
+                "original_price": 1600,
+                "discount_percent": 5,
+                "stock": 18,
+                "delivery_fee": 350,
+                "wholesale_breaks": [
+                    {"min_qty": 3, "discount_pct": 8},
+                    {"min_qty": 6, "discount_pct": 15}
+                ],
+                "images": [
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg"
+                ],
+                "category": "electronics",
+                "soldCount": 37,
+                "reviews": [
+                    {
+                        "name": "pend***@*****.com",
+                        "rating": 5,
+                        "comment": "pending review",
+                        "date": "2025-06-15"
+                    }
+                ],
+                "variants": {
+                    "colors": [],
+                    "sizes": []
+                },
+                "cod_fee_extra": 30
+            },
+            {
+                "id": "prod18",
+                "title": "Pending Product",
+                "short_description": "pending description",
+                "price": 1000,
+                "original_price": 1600,
+                "discount_percent": 5,
+                "stock": 18,
+                "delivery_fee": 350,
+                "wholesale_breaks": [
+                    {"min_qty": 3, "discount_pct": 8},
+                    {"min_qty": 6, "discount_pct": 15}
+                ],
+                "images": [
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg"
+                ],
+                "category": "electronics",
+                "soldCount": 37,
+                "reviews": [
+                    {
+                        "name": "pend***@*****.com",
+                        "rating": 5,
+                        "comment": "pending review",
+                        "date": "2025-06-15"
+                    }
+                ],
+                "variants": {
+                    "colors": [],
+                    "sizes": []
+                },
+                "cod_fee_extra": 30
+            },
+            {
+                "id": "prod19",
+                "title": "Pending Product",
+                "short_description": "pending description",
+                "price": 1000,
+                "original_price": 1600,
+                "discount_percent": 5,
+                "stock": 18,
+                "delivery_fee": 350,
+                "wholesale_breaks": [
+                    {"min_qty": 3, "discount_pct": 8},
+                    {"min_qty": 6, "discount_pct": 15}
+                ],
+                "images": [
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg"
+                ],
+                "category": "electronics",
+                "soldCount": 37,
+                "reviews": [
+                    {
+                        "name": "pend***@*****.com",
+                        "rating": 5,
+                        "comment": "pending review",
+                        "date": "2025-06-15"
+                    }
+                ],
+                "variants": {
+                    "colors": [],
+                    "sizes": []
+                },
+                "cod_fee_extra": 30
+            },
+            {
+                "id": "prod20",
+                "title": "Pending Product",
+                "short_description": "pending description",
+                "price": 1000,
+                "original_price": 1600,
+                "discount_percent": 5,
+                "stock": 18,
+                "delivery_fee": 350,
+                "wholesale_breaks": [
+                    {"min_qty": 3, "discount_pct": 8},
+                    {"min_qty": 6, "discount_pct": 15}
+                ],
+                "images": [
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg"
+                ],
+                "category": "electronics",
+                "soldCount": 37,
+                "reviews": [
+                    {
+                        "name": "pend***@*****.com",
+                        "rating": 5,
+                        "comment": "pending review",
+                        "date": "2025-06-15"
+                    }
+                ],
+                "variants": {
+                    "colors": [],
+                    "sizes": []
+                },
+                "cod_fee_extra": 30
+            },
+            {
+                "id": "prod21",
+                "title": "Pending Product",
+                "short_description": "pending description",
+                "price": 1000,
+                "original_price": 1600,
+                "discount_percent": 5,
+                "stock": 18,
+                "delivery_fee": 350,
+                "wholesale_breaks": [
+                    {"min_qty": 3, "discount_pct": 8},
+                    {"min_qty": 6, "discount_pct": 15}
+                ],
+                "images": [
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg"
+                ],
+                "category": "electronics",
+                "soldCount": 37,
+                "reviews": [
+                    {
+                        "name": "pend***@*****.com",
+                        "rating": 5,
+                        "comment": "pending review",
+                        "date": "2025-06-15"
+                    }
+                ],
+                "variants": {
+                    "colors": [],
+                    "sizes": []
+                },
+                "cod_fee_extra": 30
+            },
+            {
+                "id": "prod22",
+                "title": "Pending Product",
+                "short_description": "pending description",
+                "price": 1000,
+                "original_price": 1600,
+                "discount_percent": 5,
+                "stock": 18,
+                "delivery_fee": 350,
+                "wholesale_breaks": [
+                    {"min_qty": 3, "discount_pct": 8},
+                    {"min_qty": 6, "discount_pct": 15}
+                ],
+                "images": [
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg"
+                ],
+                "category": "electronics",
+                "soldCount": 37,
+                "reviews": [
+                    {
+                        "name": "pend***@*****.com",
+                        "rating": 5,
+                        "comment": "pending review",
+                        "date": "2025-06-15"
+                    }
+                ],
+                "variants": {
+                    "colors": [],
+                    "sizes": []
+                },
+                "cod_fee_extra": 30
+            },
+            {
+                "id": "prod23",
+                "title": "Pending Product",
+                "short_description": "pending description",
+                "price": 1000,
+                "original_price": 1600,
+                "discount_percent": 5,
+                "stock": 18,
+                "delivery_fee": 350,
+                "wholesale_breaks": [
+                    {"min_qty": 3, "discount_pct": 8},
+                    {"min_qty": 6, "discount_pct": 15}
+                ],
+                "images": [
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg"
+                ],
+                "category": "electronics",
+                "soldCount": 37,
+                "reviews": [
+                    {
+                        "name": "pend***@*****.com",
+                        "rating": 5,
+                        "comment": "pending review",
+                        "date": "2025-06-15"
+                    }
+                ],
+                "variants": {
+                    "colors": [],
+                    "sizes": []
+                },
+                "cod_fee_extra": 30
+            },
+            {
+                "id": "prod24",
+                "title": "Pending Product",
+                "short_description": "pending description",
+                "price": 1000,
+                "original_price": 1600,
+                "discount_percent": 5,
+                "stock": 18,
+                "delivery_fee": 350,
+                "wholesale_breaks": [
+                    {"min_qty": 3, "discount_pct": 8},
+                    {"min_qty": 6, "discount_pct": 15}
+                ],
+                "images": [
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg"
+                ],
+                "category": "electronics",
+                "soldCount": 37,
+                "reviews": [
+                    {
+                        "name": "pend***@*****.com",
+                        "rating": 5,
+                        "comment": "pending review",
+                        "date": "2025-06-15"
+                    }
+                ],
+                "variants": {
+                    "colors": [],
+                    "sizes": []
+                },
+                "cod_fee_extra": 30
+            },
+            {
+                "id": "prod25",
+                "title": "Pending Product",
+                "short_description": "pending description",
+                "price": 1000,
+                "original_price": 1600,
+                "discount_percent": 5,
+                "stock": 18,
+                "delivery_fee": 350,
+                "wholesale_breaks": [
+                    {"min_qty": 3, "discount_pct": 8},
+                    {"min_qty": 6, "discount_pct": 15}
+                ],
+                "images": [
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg"
+                ],
+                "category": "electronics",
+                "soldCount": 37,
+                "reviews": [
+                    {
+                        "name": "pend***@*****.com",
+                        "rating": 5,
+                        "comment": "pending review",
+                        "date": "2025-06-15"
+                    }
+                ],
+                "variants": {
+                    "colors": [],
+                    "sizes": []
+                },
+                "cod_fee_extra": 30
+            },
+            {
+                "id": "prod26",
+                "title": "Pending Product",
+                "short_description": "pending description",
+                "price": 1000,
+                "original_price": 1600,
+                "discount_percent": 5,
+                "stock": 18,
+                "delivery_fee": 350,
+                "wholesale_breaks": [
+                    {"min_qty": 3, "discount_pct": 8},
+                    {"min_qty": 6, "discount_pct": 15}
+                ],
+                "images": [
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg"
+                ],
+                "category": "electronics",
+                "soldCount": 37,
+                "reviews": [
+                    {
+                        "name": "pend***@*****.com",
+                        "rating": 5,
+                        "comment": "pending review",
+                        "date": "2025-06-15"
+                    }
+                ],
+                "variants": {
+                    "colors": [],
+                    "sizes": []
+                },
+                "cod_fee_extra": 30
+            },
+            {
+                "id": "prod27",
+                "title": "Pending Product",
+                "short_description": "pending description",
+                "price": 1000,
+                "original_price": 1600,
+                "discount_percent": 5,
+                "stock": 18,
+                "delivery_fee": 350,
+                "wholesale_breaks": [
+                    {"min_qty": 3, "discount_pct": 8},
+                    {"min_qty": 6, "discount_pct": 15}
+                ],
+                "images": [
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg"
+                ],
+                "category": "electronics",
+                "soldCount": 37,
+                "reviews": [
+                    {
+                        "name": "pend***@*****.com",
+                        "rating": 5,
+                        "comment": "pending review",
+                        "date": "2025-06-15"
+                    }
+                ],
+                "variants": {
+                    "colors": [],
+                    "sizes": []
+                },
+                "cod_fee_extra": 30
+            },
+            {
+                "id": "prod28",
+                "title": "Pending Product",
+                "short_description": "pending description",
+                "price": 1000,
+                "original_price": 1600,
+                "discount_percent": 5,
+                "stock": 18,
+                "delivery_fee": 350,
+                "wholesale_breaks": [
+                    {"min_qty": 3, "discount_pct": 8},
+                    {"min_qty": 6, "discount_pct": 15}
+                ],
+                "images": [
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg"
+                ],
+                "category": "electronics",
+                "soldCount": 37,
+                "reviews": [
+                    {
+                        "name": "pend***@*****.com",
+                        "rating": 5,
+                        "comment": "pending review",
+                        "date": "2025-06-15"
+                    }
+                ],
+                "variants": {
+                    "colors": [],
+                    "sizes": []
+                },
+                "cod_fee_extra": 30
+            },
+            {
+                "id": "prod29",
+                "title": "Pending Product",
+                "short_description": "pending description",
+                "price": 1000,
+                "original_price": 1600,
+                "discount_percent": 5,
+                "stock": 18,
+                "delivery_fee": 350,
+                "wholesale_breaks": [
+                    {"min_qty": 3, "discount_pct": 8},
+                    {"min_qty": 6, "discount_pct": 15}
+                ],
+                "images": [
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg"
+                ],
+                "category": "electronics",
+                "soldCount": 37,
+                "reviews": [
+                    {
+                        "name": "pend***@*****.com",
+                        "rating": 5,
+                        "comment": "pending review",
+                        "date": "2025-06-15"
+                    }
+                ],
+                "variants": {
+                    "colors": [],
+                    "sizes": []
+                },
+                "cod_fee_extra": 30
+            },
+            {
+                "id": "prod30",
+                "title": "Pending Product",
+                "short_description": "pending description",
+                "price": 1000,
+                "original_price": 1600,
+                "discount_percent": 5,
+                "stock": 18,
+                "delivery_fee": 350,
+                "wholesale_breaks": [
+                    {"min_qty": 3, "discount_pct": 8},
+                    {"min_qty": 6, "discount_pct": 15}
+                ],
+                "images": [
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg"
+                ],
+                "category": "electronics",
+                "soldCount": 37,
+                "reviews": [
+                    {
+                        "name": "pend***@*****.com",
+                        "rating": 5,
+                        "comment": "pending review",
+                        "date": "2025-06-15"
+                    }
+                ],
+                "variants": {
+                    "colors": [],
+                    "sizes": []
+                },
+                "cod_fee_extra": 30
+            },
+            {
+                "id": "prod31",
+                "title": "Pending Product",
+                "short_description": "pending description",
+                "price": 1000,
+                "original_price": 1600,
+                "discount_percent": 5,
+                "stock": 18,
+                "delivery_fee": 350,
+                "wholesale_breaks": [
+                    {"min_qty": 3, "discount_pct": 8},
+                    {"min_qty": 6, "discount_pct": 15}
+                ],
+                "images": [
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg"
+                ],
+                "category": "electronics",
+                "soldCount": 37,
+                "reviews": [
+                    {
+                        "name": "pend***@*****.com",
+                        "rating": 5,
+                        "comment": "pending review",
+                        "date": "2025-06-15"
+                    }
+                ],
+                "variants": {
+                    "colors": [],
+                    "sizes": []
+                },
+                "cod_fee_extra": 30
+            },
+            {
+                "id": "prod32",
+                "title": "Pending Product",
+                "short_description": "pending description",
+                "price": 1000,
+                "original_price": 1600,
+                "discount_percent": 5,
+                "stock": 18,
+                "delivery_fee": 350,
+                "wholesale_breaks": [
+                    {"min_qty": 3, "discount_pct": 8},
+                    {"min_qty": 6, "discount_pct": 15}
+                ],
+                "images": [
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg"
+                ],
+                "category": "electronics",
+                "soldCount": 37,
+                "reviews": [
+                    {
+                        "name": "pend***@*****.com",
+                        "rating": 5,
+                        "comment": "pending review",
+                        "date": "2025-06-15"
+                    }
+                ],
+                "variants": {
+                    "colors": [],
+                    "sizes": []
+                },
+                "cod_fee_extra": 30
+            },
+            {
+                "id": "prod33",
+                "title": "Pending Product",
+                "short_description": "pending description",
+                "price": 1000,
+                "original_price": 1600,
+                "discount_percent": 5,
+                "stock": 18,
+                "delivery_fee": 350,
+                "wholesale_breaks": [
+                    {"min_qty": 3, "discount_pct": 8},
+                    {"min_qty": 6, "discount_pct": 15}
+                ],
+                "images": [
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg"
+                ],
+                "category": "electronics",
+                "soldCount": 37,
+                "reviews": [
+                    {
+                        "name": "pend***@*****.com",
+                        "rating": 5,
+                        "comment": "pending review",
+                        "date": "2025-06-15"
+                    }
+                ],
+                "variants": {
+                    "colors": [],
+                    "sizes": []
+                },
+                "cod_fee_extra": 30
+            },
+            {
+                "id": "prod34",
+                "title": "Pending Product",
+                "short_description": "pending description",
+                "price": 1000,
+                "original_price": 1600,
+                "discount_percent": 5,
+                "stock": 18,
+                "delivery_fee": 350,
+                "wholesale_breaks": [
+                    {"min_qty": 3, "discount_pct": 8},
+                    {"min_qty": 6, "discount_pct": 15}
+                ],
+                "images": [
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg"
+                ],
+                "category": "electronics",
+                "soldCount": 37,
+                "reviews": [
+                    {
+                        "name": "pend***@*****.com",
+                        "rating": 5,
+                        "comment": "pending review",
+                        "date": "2025-06-15"
+                    }
+                ],
+                "variants": {
+                    "colors": [],
+                    "sizes": []
+                },
+                "cod_fee_extra": 30
+            },
+            {
+                "id": "prod35",
+                "title": "Pending Product",
+                "short_description": "pending description",
+                "price": 1000,
+                "original_price": 1600,
+                "discount_percent": 5,
+                "stock": 18,
+                "delivery_fee": 350,
+                "wholesale_breaks": [
+                    {"min_qty": 3, "discount_pct": 8},
+                    {"min_qty": 6, "discount_pct": 15}
+                ],
+                "images": [
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg"
+                ],
+                "category": "electronics",
+                "soldCount": 37,
+                "reviews": [
+                    {
+                        "name": "pend***@*****.com",
+                        "rating": 5,
+                        "comment": "pending review",
+                        "date": "2025-06-15"
+                    }
+                ],
+                "variants": {
+                    "colors": [],
+                    "sizes": []
+                },
+                "cod_fee_extra": 30
+            },
+            {
+                "id": "prod36",
+                "title": "Pending Product",
+                "short_description": "pending description",
+                "price": 1000,
+                "original_price": 1600,
+                "discount_percent": 5,
+                "stock": 18,
+                "delivery_fee": 350,
+                "wholesale_breaks": [
+                    {"min_qty": 3, "discount_pct": 8},
+                    {"min_qty": 6, "discount_pct": 15}
+                ],
+                "images": [
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg"
+                ],
+                "category": "electronics",
+                "soldCount": 37,
+                "reviews": [
+                    {
+                        "name": "pend***@*****.com",
+                        "rating": 5,
+                        "comment": "pending review",
+                        "date": "2025-06-15"
+                    }
+                ],
+                "variants": {
+                    "colors": [],
+                    "sizes": []
+                },
+                "cod_fee_extra": 30
+            },
+            {
+                "id": "prod37",
+                "title": "Pending Product",
+                "short_description": "pending description",
+                "price": 1000,
+                "original_price": 1600,
+                "discount_percent": 5,
+                "stock": 18,
+                "delivery_fee": 350,
+                "wholesale_breaks": [
+                    {"min_qty": 3, "discount_pct": 8},
+                    {"min_qty": 6, "discount_pct": 15}
+                ],
+                "images": [
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg"
+                ],
+                "category": "electronics",
+                "soldCount": 37,
+                "reviews": [
+                    {
+                        "name": "pend***@*****.com",
+                        "rating": 5,
+                        "comment": "pending review",
+                        "date": "2025-06-15"
+                    }
+                ],
+                "variants": {
+                    "colors": [],
+                    "sizes": []
+                },
+                "cod_fee_extra": 30
+            },
+            {
+                "id": "prod38",
+                "title": "Pending Product",
+                "short_description": "pending description",
+                "price": 1000,
+                "original_price": 1600,
+                "discount_percent": 5,
+                "stock": 18,
+                "delivery_fee": 350,
+                "wholesale_breaks": [
+                    {"min_qty": 3, "discount_pct": 8},
+                    {"min_qty": 6, "discount_pct": 15}
+                ],
+                "images": [
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg",
+                    "https://vast-crimson-490q5haydj.edgeone.app/unnamed.jpg"
+                ],
+                "category": "electronics",
+                "soldCount": 37,
+                "reviews": [
+                    {
+                        "name": "pend***@*****.com",
+                        "rating": 5,
+                        "comment": "pending review",
+                        "date": "2025-06-15"
+                    }
+                ],
+                "variants": {
+                    "colors": [],
+                    "sizes": []
+                },
+                "cod_fee_extra": 30
             }
         ];
 
@@ -2402,7 +3513,7 @@
         // State management
         let cart = [];
         let selectedOptions = {};
-        let currentPage = 'home';
+        let currentPage = 'shop';
         let currentProduct = null;
         let filteredProducts = [...products];
 
@@ -2440,7 +3551,7 @@
         // Initialize the app
         function init() {
             setupEventListeners();
-            navigateToPage('home');
+            navigateToPage('shop');
             loadFeaturedProducts();
             loadCategories();
             loadSpecialOffers();
@@ -3960,11 +5071,6 @@
         // Initialize the app when DOM is loaded
         document.addEventListener('DOMContentLoaded', init);
 
-
-
-
-
-        
     </script>
 </body>
 </html>
