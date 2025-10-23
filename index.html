@@ -1853,15 +1853,20 @@
                             <label class="form-label" for="deliveryAddress">Delivery Address *</label>
                             <textarea class="form-textarea" id="deliveryAddress" required></textarea>
                         </div>
+
+                         <div class="form-group">
+                            <label class="form-label" for="customerNotes">Notes (Optional)</label>
+                            <textarea class="form-textarea" id="customerNotes"></textarea>
+                        </div>
                         
                         <!-- Receiver Information Section -->
                         <div class="form-row">
                             <div class="form-group">
-                                <label class="form-label" for="receiverName">Receiver's Name *</label>
+                                <label class="form-label" for="receiverName">Resaller's Name *</label>
                                 <input type="text" class="form-input" id="receiverName" required>
                             </div>
                             <div class="form-group">
-                                <label class="form-label" for="receiverWhatsApp">Receiver's WhatsApp Number *</label>
+                                <label class="form-label" for="receiverWhatsApp">Resaller's WhatsApp Number *</label>
                                 <input type="tel" class="form-input" id="receiverWhatsApp" required>
                             </div>
                         </div>
@@ -1870,17 +1875,13 @@
                             <label class="form-label" for="profitAmount">Profit Amount (LKR) *</label>
                             <input type="number" class="form-input" id="profitAmount" min="0" step="0.01" required>
                         </div>
-                        
-                        <div class="form-group">
-                            <label class="form-label" for="customerNotes">Notes (Optional)</label>
-                            <textarea class="form-textarea" id="customerNotes"></textarea>
-                        </div>
+
                         <div class="form-group">
                             <label class="form-label" for="paymentMethod">Payment Method *</label>
                             <select class="form-select" id="paymentMethod" required>
                                 <option value="cod">Cash on Delivery</option>
                                 <option value="bank">Bank Deposit</option>
-                                <option value="mobile">Card Payment</option>
+                                <option value="mobile">paypal Payment</option>
                             </select>
                         </div>
                     </form>
@@ -2115,7 +2116,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 R U Online Stores. All rights reserved.</p>
+                <p>&copy; 2025 Ru Online Stores. All rights reserved.</p>
             </div>
         </div>
     </footer>
